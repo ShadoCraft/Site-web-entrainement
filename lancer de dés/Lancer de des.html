@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lancer de dés</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			alert("ATTENTION! Ce site n'est qu'un test d'un étudiant en RT. Si vous voulez vraiment tous savoir sur les dés, ciquez ici: https://fr.wikipedia.org/wiki/D%C3%A9");
+		</script>
+		
+		<h1> <div class="center"><img src="image/de.png" alt="dés" height="50" width="75"> Les dés </h1></div>
+		<div class="body2">
+		
+		<div class="dropdown">  
+		<button class="dropbtn"> Choississez une partie</button>  
+		<div class="dropdown-content">  
+		<a href="#simulation"> 1.Simulation </a>  <br>
+		<a href="#histoirelien"> 2.Histoire du dé </a>  <br>
+		<a href="#typedelien"> 3.Type de dé </a>  <br>
+		<a href="#achatdelien"> 4.Achat de dé </a> <br>
+		<a href="#sonvideolien"> 5.Son et vidéo de dé </a> 
+		</div>  
+		</div>  
+		<br>
+		<br>
+		
+		<div class="tableau"><tr>
+			<td>&emsp;Sommaire<br>
+			&emsp;&emsp;<a href="#simulation">1.Simulation</a><br>
+			&emsp;&emsp;<a href="#histoirelien">2.Histoire du dé</a><br>
+			&emsp;&emsp;<a href="#typedelien">3.Type de dé</a><br>
+			&emsp;&emsp;<a href="#achatdelien">4.Achat de dé</a><br>
+			&emsp;&emsp;<a href="#sonvideolien">5.Son et vidéo de dé</a><br>
+			
+			</td>
+		</tr></div>
+		
+		
+		<h2>Simulation</h2>
+		<hr>
+		<div class=center>
+		<div id=simulation><script type="text/javascript">
+			function lancer(n){
+			for (i=1 , suite='' ; i<=n ; i++ ){
+				de=Math.ceil(6*Math.random())
+				suite=suite + de.toString()           
+				}
+			document.getElementById('result').value = suite;
+			}
+			
+		</script></div>
+		 <button type="button" onClick="lancer(1);">Lancer le dé</button><br><br>
+		 <input type="text" id="result" name="monChamp" size="10"> 
+		 <br>
+		 </div>
+		 
+		 
+		<div id=histoirelien>
+		<div id="histoire"><h2>L'histoire du dé<h2></div></div>
+		<hr>
+		<div class="p1">Un dé est un objet, généralement de petite taille et de forme cubique, qui permet de tirer aléatoirement un nombre ou un symbole parmi plusieurs possibilités.Les dés tirent probablement leur origine des os des chevilles
+		(spécifiquement l’astragale) d’animaux tels le bœuf. Il n’est pas possible de déterminer précisément l’apparition des dés et leur distinction des osselets, les écrivains antiques semblant confondre les deux jeux. 
+		Il est certain en revanche qu’ils datent des temps préhistoriques. Leur présence dans des tombes anciennes de la vallée de l’Indus, des dés cubiques vieux de 4 300 ans y ont été retrouvés, semble pointer vers une origine
+		asiatique. À cette époque, la somme de faces opposées ne vaut pas encore systématiquement 71. Le jeu de dé est mentionné dans le Rig-Veda et l’Atharvaveda indiens</p></div>
+		<figure><img src="image/osselet.jpg" height="300" width="450"><figcaption>Un jeu des osselets</figcaption></figure>
+		<br>
+		
+		
+		<div id=typedelien>
+		<div id="typede"><h2>Les différents type de dés<h2></div></div>
+		<hr>
+		<div class="p2">
+		<h3><span id="classique">Le dé classique</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<span class="noncubique">Les dé non cubique</span><h3>
+		<img src="image/de_classique.jpg" class="de" height="300" width="450"> &emsp;&emsp;&emsp;<img src="image/de_non_cubique.jpg" class="denoncubique" height="300" width="450">
+		</div>
+		<br>
+		
+		
+		
+		<div id=achatdelien>
+		<div id="achatde"><h2>Achat de dé<h2></div></div>
+		<hr>
+		<img src="image/achatde1.jpg" class="achatde" height="300" width="350"><figcaption><a href=https://www.amazon.fr/GWHOLE-Donjons-Dragons-Double-Couleur-Poly%C3%A9drique/dp/B07HF4SLMJ/ref=sr_1_6?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=d%C3%A9&qid=1629034761&s=toys&sr=1-6>Lot de 42 Dés Donjons & Dragons</a></figcaption>
+		<br>
+		<img src="image/achatde2.jpg" class="achatde" height="400" width="250"><figcaption><a href=https://www.amazon.fr/Ducale-jeu-fran%C3%A7ais-d%C3%A9s-Jeu-130010723/dp/B0833KD551/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=d%C3%A9&qid=1629035722&s=toys&sr=1-4>Lot de 12 Dés 6 faces</a></figcaption>
+		<br>
+		
+		
+		<div id=sonvideolien>
+		<div id="sonvideo"><h2>Son et vidéo de dé<h2></div></div>
+		<hr>
+		<h3>Audio</h3>
+		<audio controls="controls">
+			<source src="audio/audio_de.mp3">
+		</audio>
+		<br>
+		<h3>Vidéo<h3>
+		<video controls="controls">
+			<source src="video/lancer_de_de_video.mp4">
+		</video>
+		<h3>Vidéo explicative d'un jeu utilisant différents types de dés</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/nEnisnJxElQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		
+		</div>
+	</body>
+</html>
